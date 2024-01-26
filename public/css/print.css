@@ -1,0 +1,33 @@
+.invoice{
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+  }
+
+  img{
+    width: 40%;
+  }
+
+  body{
+    line-height: 3px;
+  }
+
+  #ttd{
+    text-align: right;
+    line-height: 10px
+  }
+
+  h2{
+    color: white;
+  }
+
+  @media print{
+    body *:not(#printable):not(#printable *){
+      visibility: hidden;
+    }
+    #printable{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
